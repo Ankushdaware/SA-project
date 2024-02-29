@@ -1,0 +1,334 @@
+
+.defaultcolor {
+    color: #1D60AE;
+}
+
+.borderRadius {
+    border-radius: 25px;
+}
+
+.maxcard {
+    max-width: 600px;
+}
+
+.padRight {
+    padding-right: 0%;
+}
+
+.padLeft {
+    padding-left: 0%;
+}
+
+// Login
+
+// header
+.header {
+    box-shadow: #00000040 2px 2px;
+}
+
+// breadcrumb
+.b-color {
+    color: black;
+}
+
+//all logout and deactivate
+.cardwidth {
+    max-width: 600px;
+    border-radius: 30px;
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .show-on-mobile {
+      display: flex;
+    }
+
+    .show-on-desktop {
+        display: none;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .show-on-desktop {
+    display: flex;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+
+}
+
+
+// Head Admin Content
+
+
+.h-a-contentSchool {
+    background-color: #FD7D7D;
+    border-color: #FD7D7D;
+    color: white;
+}
+
+.h-a-contentSchool:hover {
+    background-color: #FD7D7D;
+    border-color: #FD7D7D;
+}
+
+
+
+.h-a-contentAdmin {
+    margin-left: 2%;
+    background-color: #7D99FD;
+    border-color: #7D99FD;
+    color: white;
+}
+
+.h-a-contentAdmin:hover {
+    background-color: #7D99FD;
+    border-color: #7D99FD;
+}
+
+// Admin Content
+
+.a-content {  // also add and school details
+    border: none;
+    color: white;
+}
+
+.a-content-title { //also school details
+    margin-top: 20%;
+}
+
+// @media (min-width: 767px) and (max-width: 985px) {
+//     .a-content-title {
+//         margin-top: 10%;
+//     }
+// }
+
+@media (min-width: 317px) and (max-width: 767px) {
+    .a-content-title {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .a-content-title {
+        margin-top: 10%;
+    }
+}
+@media  (max-width: 1024px) {
+    .sub-cls-teacher {
+        margin-top: 0%;
+    }
+}
+
+.a-content-half {
+    margin-left: 16%;
+}
+
+@media only screen and (max-width: 767px) {
+    .a-content-half {
+        margin-left: 0%;
+    }
+  }
+
+
+// School Details
+
+.a-content-half1 {
+    margin-left: 10%;
+}
+
+@media only screen and (max-width: 767px) {
+    .a-content-half1 {
+        margin-left: 0%;
+    }
+  }
+
+// Admin Add
+
+
+.add-div {         // also (schooldetails, teacherdetails)
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.col-t {
+    width: 20%;
+}
+
+.add-mar-left {
+    margin-left: 10%;
+}
+
+@media screen and (max-width:767px) {
+    .add-mar-left {
+        margin-left: 0%;
+    }
+}
+
+// .button-card{
+//     background-color: white;
+//     border: none;
+// }
+
+// .button-card:hover, .button-card:active {
+//     background-color: white;
+//     border: none;
+// }
+
+.mar-right {
+    margin-right: 3%;
+}
+
+.card {
+    border: none;
+}
+
+// .add-half {
+//     margin-top: 6%;
+// }
+
+// .add-half1 {
+//     margin-left: 10%;
+// }
+
+// .add-half1-size {
+//     min-width: 55%;
+// }
+
+// Admin Leave Section
+.ls-grp {
+    float: right;
+}
+
+.ls-approval {
+    background-color: white;
+    border: none;
+    color: green;
+    text-decoration: none;
+}
+
+
+.ls-reject {
+    margin-left: 10%;
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+
+}
+
+.ls-card {
+    margin-top: 2%;
+}
+
+//  Admin Profile
+
+.btn-gap {
+    margin-left: 2%;
+}
+
+// Admin Profile
+
+.logout-card {
+    width: 38rem;
+    height: 20rem;
+}
+
+.logout-content {
+    margin-top: 8%;
+}
+
+.log-mar {
+    margin-top: 2%;
+}
+
+// Teacher
+
+.teacher-content {
+    width: 80%;
+    height: 150%;
+    background-color: white;
+    border: none;
+    padding-top: 20%;
+    // margin-top: 5%;
+}
+
+.teacher-content:hover{
+    background-color: white;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .teacher-content {
+        padding-top: 5%;
+    }
+}
+
+// .teacher-content:focus {
+//     background-color: white;
+//     color: white;
+// }
+
+// .teacher-content:active {
+//     background-color: white;
+//     color: white;
+// }
+
+.teacher-mar {
+    margin-top: 3%;
+}
+
+// MultiSekect
+
+// .multi-select {
+//     border-radius: 25px;
+//     font-size: 15px;
+//     // min-width: 120px;
+//     background-color: white;
+//     border-color: black;
+//   }
+
+//   .multi-select .placeholder {
+//     border: 1px #ddd solid;
+//     background-color: white;
+//     border-radius: 5px;
+//     height: 21px;
+//     font-size: 13px;
+//     color: rgb(37, 35, 35);
+//     font-weight: 500;
+//     cursor: pointer;
+//     padding: 5px 20px;
+//   }
+              
+//   .multi-select options {
+//     border: 1px solid #ddd;
+//     background: white;
+//     color: black;
+//     max-height: 300px;
+//     overflow: auto;
+//     border-radius: 5px;
+//   }
+              
+//   .multi-select options option {
+//     display: block;
+//     color: rgb(37, 35, 35);
+//     font-weight: 500px;
+//     font-size: 14px;
+//     margin-top: 0;
+//     padding-top: 2px;
+//   }
+              
+//   .multi-select options option:hover {
+//     background-color: #1D60AE;
+//     color: white;
+//   }
+
+// .multi-select .chips {
+//     background: '#1D60AE'
+//   }
+//   .multi-select .searchBox {
+//     border-radius: '25px',
+//   }
