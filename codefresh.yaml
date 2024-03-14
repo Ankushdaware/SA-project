@@ -1,0 +1,32 @@
+version: '1.0'
+stages:
+  - "clone"
+  - "build"
+  - "deploy"
+
+steps:
+  clone:
+    title: "Cloning repository"
+    type: "git-clone"
+    repo: "your/repo"
+    revision: "master"
+    stage: "clone"
+
+  build:
+    title: "Building application"
+    type: "build"
+    stage: "build"
+    image_name: "your-docker-image"
+
+  deploy:
+    title: "Deploying to Azure"
+    type: "helm"
+    stage: "deploy"
+    arguments:
+      chart: "your-chart"
+      releaseName: "your-release"
+      namespace: "your-namespace"
+      values:
+        - name: "image.tag"
+          value: "${{CF_SHORT_REVISION}}"
+      kubeContext: "your-kube-context"
