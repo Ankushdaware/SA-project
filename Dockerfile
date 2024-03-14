@@ -11,13 +11,14 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code to the working directory
-COPY . /app
+COPY . .
 
-# Build the React app
+# Build the React app (if needed)
+# If your application is not a React app, you can remove this line
 RUN npm run build
 
 # Expose port 3000 to the outside world
 EXPOSE 3000
 
-# Command to run the React app
+# Command to run the application
 CMD ["npm", "start"]
