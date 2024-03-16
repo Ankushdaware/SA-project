@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # React app service
+  react-app:
+    container_name: react-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # This is needed for file watching to work properly in certain environments
+
+  # Proxy server service (assuming you're using create-react-app's default proxy setup)
+  proxy:
+    container_name: proxy
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - react-app

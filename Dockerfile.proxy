@@ -1,0 +1,14 @@
+# Use official Node.js image as the base image
+FROM node:14-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install http-proxy-middleware
+RUN npm install http-proxy-middleware
+
+# Copy proxy server configuration file
+COPY proxy.js .
+
+# Start the proxy server
+CMD ["node", "proxy.js"]
